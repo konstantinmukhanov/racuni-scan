@@ -38,7 +38,7 @@
   <script>
     const tg = window.Telegram && window.Telegram.WebApp;
     const $ = (id) => document.getElementById(id);
-    const RECEIPT = /https?:\/\/suf\.purs\.gov\.rs\/v\/?\?vl=/i;
+    const RECEIPT = /https?:\/\/suf\.purs\.gov\.rs(?::\d+)?\/v\/?\?vl=/i;
 
     function show(icon, title, text, isError) {
       $('icon').textContent = icon;
